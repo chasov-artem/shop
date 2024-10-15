@@ -35,7 +35,9 @@ const Cart = () => {
             <div className="flex gap-2 items-center ">
               <button
                 onClick={() =>
-                  item.count > 0 ? dispatch(decreaseProductCount(item)) : ""
+                  item.count > 1
+                    ? dispatch(decreaseProductCount(item))
+                    : dispatch(removeFromCart(item))
                 }
                 className="btn"
               >
