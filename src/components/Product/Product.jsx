@@ -9,7 +9,7 @@ const Product = ({ product }) => {
       <div className="flex gap-4 items-center">
         <p>{product.title}</p>
         <button
-          onClick={() => dispatch(addToCart(product), console.log(product))}
+          onClick={() => dispatch(addToCart(product))}
           className="btn btn-primary"
         >
           Add to cart

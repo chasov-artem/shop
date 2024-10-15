@@ -12,7 +12,9 @@ const Products = () => {
   }, []);
   return (
     <div>
-      <h2>Products</h2>
+      <h2 className="font-bold text-center underline mb-4 text-5xl">
+        Products
+      </h2>
       <ul className="grid grid-cols-3 gap-4">
         {products.map((product) => (
           <Product key={product.id} product={product} />
